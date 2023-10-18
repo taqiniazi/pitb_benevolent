@@ -1,0 +1,96 @@
+<div class="login_area px-3">
+    <div class="row">
+        <div class="d-none d-lg-block col-md-5">
+            <app-login-left-side />            
+        </div>
+        <div class="col-md-12 col-lg-7">
+            <div class="row">
+                <div class="col-md-9 col-lg-10 col-xl-9 mx-auto h-100">
+                <div class="loginForm registerForm h-100v d-flex flex-wrap justify-content-center">
+                    <div class="login_title w-100 text-center mb-4">
+                        <h2 class="text-capitalize fw-600">Sign Up </h2>
+                    </div>
+                    <form action="" class="w-100" method="post">
+                        <div class="mb-3 row">
+                            <label for="appilcantName" class="col-sm-3 col-form-label text-end">Appilcant Name                            </label>
+                            <div class="col-sm-9">
+                              <input type="text" class="form-control" id="appilcantName">
+                            </div>
+                        </div>
+                        <div class="mb-3 row">
+                            <label for="appilcantFatherName" class="col-sm-3 col-form-label text-end">Father/Husband Name                            </label>
+                            <div class="col-sm-9">
+                              <input type="text" class="form-control" id="appilcantFatherName">
+                            </div>
+                        </div>
+                        <div class="mb-4 row">
+                            <label for="cnicNumber" class="col-sm-3 col-form-label text-end">Applicant CNIC                            </label>
+                            <div class="col-sm-9">
+                                <input type="text" class="form-control" id="cnicNumber">
+                            </div>
+                        </div>
+                        <div class="mb-4 row">
+                            <label for="" class="col-sm-3 col-form-label text-end">Applicant Status</label>
+                            <div class="col-sm-4">
+                                <select class="form-control form-select">
+                                    <option value="Select Status" selected disabled>Select Status</option>
+                                    <option value="">Select 1</option>
+                                    <option value="">Select 2</option>
+                                    <option value="">Select 3</option>
+                                    <option value="">Select 4</option>
+                                </select>
+                            </div>
+                        
+                            <label for="" class="col-sm-1 col-form-label text-end">Gender</label>
+                            <div class="col-sm-4">
+                                <select class="form-control form-select">
+                                    <option value="Select Status" selected disabled>Select Gender</option>
+                                    <option value="">Male</option>
+                                    <option value="">Female</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="mb-3 row">
+                            <label for="emailAddress" class="col-sm-3 col-form-label text-end">Email</label>
+                            <div class="col-sm-9">
+                              <input type="tel" class="form-control" id="emailAddress">
+                            </div>
+                        </div>
+                        <div class="mb-4 row">
+                            <label for="" class="col-sm-3 col-form-label text-end">Mobile</label>
+                            <div class="col-sm-3 pe-0">
+                                <input type="tel" class="form-control" />
+                            </div>
+                        
+                            <label for="" class="col-sm-2 col-form-label text-md-center">Date of Birth</label>
+                            <div class="col-sm-4">
+                               <input type="date" class="form-control" />
+                            </div>
+                        </div>
+                        <div class="mb-3 row">
+                            <label for="password" class="col-sm-3 col-form-label text-end">Set Password</label>
+                            <div class="col-sm-9">
+                              <input type="tel" class="form-control" id="password">
+                            </div>
+                        </div>
+                        <div class="row mb-4">
+                            <legend class="col-form-label col-sm-2 pt-0"></legend>
+                            <div class="col-sm-10 text-center">
+                                <a routerLink="/" class="btn btn-success text-white w-100 w-md-50 loginBtn">Register</a>
+                            </div>
+                        </div>
+                        <div class="row mb-1">
+                            <legend class="col-form-label col-sm-2 pt-0"></legend>
+
+                            <div class="col-md-10 text-center">
+                               <small> <p class="haveAccount">Already have an account?  <a routerLink="/" class="text-primary">Login</a></p></small>
+                            </div>
+                        </div>
+                    </form>
+                </div>    
+            </div>            
+            </div>
+
+        </div>
+    </div>
+</div>
