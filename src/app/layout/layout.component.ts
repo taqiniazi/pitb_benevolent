@@ -8,7 +8,6 @@ import { NavigationEnd, Router } from '@angular/router';
 })
 export class LayoutComponent {
   showHeaderAndSidebar: boolean = true;
-
   constructor(private router: Router) {
     this.router.events.subscribe((event) => {
       if (event instanceof NavigationEnd) {

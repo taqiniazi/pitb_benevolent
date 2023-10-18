@@ -8,14 +8,14 @@ import { LayoutComponent } from './layout/layout.component';
 
 const routes: Routes = [
   {
-    path: '',
+    path: 'dashboard',
     component: LayoutComponent, // Use layout for all routes
     children: [
       {path: '', component: DashboardComponent,title: 'Welcome to Dashboard'}
     ],
   },
   {
-    path: 'login',
+    path: '',
     component: LoginComponent, // A separate login component without the layout
   },
   {path: 'forgetPassword', component: ForgetpasswordComponent,title: 'Forget Password'},
