@@ -9,14 +9,19 @@ import { LayoutComponent } from './layout/layout.component';
 const routes: Routes = [
   {
     path: 'dashboard',
-    component: LayoutComponent, // Use layout for all routes
+    component: LayoutComponent, 
     children: [
       {path: '', component: DashboardComponent,title: 'Welcome to Dashboard'}
     ],
   },
+
   {
     path: '',
-    component: LoginComponent, // A separate login component without the layout
+    component: LoginComponent, 
+  },
+  {
+    path: 'login',
+    component: LoginComponent,
   },
   {path: 'forgetPassword', component: ForgetpasswordComponent,title: 'Forget Password'},
   {path: 'register', component: SignupComponent,title: 'Register'}

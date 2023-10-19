@@ -1,11 +1,12 @@
-<div id="sidebar">
-    <app-sidebar></app-sidebar>
-</div>
-
-<div id="content">
-    <div id="header">
-        <app-header />
+<div class="d-flex flex-wrap">
+    <div id="sidebar h-100">
+        <app-sidebar></app-sidebar>
     </div>
-    <router-outlet>
-    </router-outlet>
+    
+    <div id="content">
+        <div id="header">
+            <app-header />
+        </div>
+        <router-outlet />
+    </div>
 </div>

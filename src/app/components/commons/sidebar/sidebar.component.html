@@ -1,13 +1,24 @@
 <aside>
-    <div class="logo"></div>
-    <ul class="sidebar">
-        <li><a routerLink="/dashboard">Link 1</a></li>
-        <li><a routerLink="/dashboard2">Link 2</a></li>
-        <!-- <li><a href="javascript:;">Link 3</a></li>
-        <li><a href="javascript:;">Link 4</a></li>
-        <li><a href="javascript:;">Link 5</a></li>
-        <li><a href="javascript:;">Link 6</a></li>
-        <li><a href="javascript:;">Link 7</a></li>
-        <li><a href="javascript:;">Link 8</a></li> -->
+  <div class="logo"></div>
+  <a href="javascript:;" class="toggleList" (click)="toggleSidebar()">
+    <i class="bi bi-box-arrow-in-left"></i>
+  </a>
+  <ul class="nav navbar"  [ngClass]="{'collapsed': isCollapsed}">
+    <li *ngFor="let item of navItems" [class.active]="item.active">
+      <a *ngIf="!item.children" [routerLink]="item.link">
+        <i [class]="item.iconClass"></i> <span>{{ item.label }}</span>
+      </a>
+      <a href="javascript:;" *ngIf="item.children" (click)="toggleItem(item)">
+        <i [class]="item.iconClass"></i> <span>{{ item.label }}</span>  
+      </a>
+      <ul *ngIf="item.children && item.expanded">
+        <li *ngFor="let child of item.children">
+          <a [routerLink]="child.link">
+            <i [class]="child.iconClass"></i> {{ child.label }}
+          </a>
+        </li>
       </ul>
+    </li>
+   
+  </ul>
 </aside>
