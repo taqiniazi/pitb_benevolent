@@ -54,4 +54,49 @@ ul{
         font-weight: 500;
     }
 
+    
+}
+.mini-content{
+    #content{
+        margin-left: 90px !important;
+    }
+    
+}
+
+#sidebar{
+    width: 275px;
+    
+    &.sidebar-collapsed{
+        width: 70px;
+        aside{
+            .logo{
+                justify-content: center;
+                .text{
+                    display: none !important;
+                }
+            }
+            ul.navbar{
+                width: 70px;
+                li{
+                    position: relative;
+                    a{
+                        text-align: center;
+                        i{
+                            font-size: 24px;
+                        }
+                        span{
+                            display: none;
+                        }
+                    }
+                    ul{
+                        position: absolute;
+                        left: 100%;
+                        max-width: 170px;
+                        background-color: #27AE60;
+                        top: 0;
+                    }
+                }
+            }
+        }        
+    }
 }

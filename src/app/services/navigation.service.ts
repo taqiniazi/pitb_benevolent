@@ -1,6 +1,13 @@
 import { Injectable } from '@angular/core';
 import { BehaviorSubject, Observable } from 'rxjs';
-
+export interface NavItem {
+  expanded?: boolean;
+  iconClass: string;
+  label: string;
+  link?: string;
+  active?: boolean,
+  children?: NavItem[];
+}
 
 @Injectable({
   providedIn: 'root'
@@ -47,12 +54,4 @@ export class NavigationService {
   getNavItems(): Observable<NavItem[]> {
     return this.navItems.asObservable();
   }
-}
-export interface NavItem {
-  expanded?: boolean;
-  iconClass: string;
-  label: string;
-  link?: string;
-  active?: boolean,
-  children?: NavItem[];
 }

@@ -1,8 +1,11 @@
 <aside>
-  <div class="logo"></div>
-  <a href="javascript:;" class="toggleList" (click)="toggleSidebar()">
-    <i class="bi bi-box-arrow-in-left"></i>
-  </a>
+  <div class="logo d-flex flex-row">
+    <div class="image d-flex justify-content-center">
+      <img src="../../../../assets/images/government-of-punjab-logo.svg" class="img-fluid w-100"/>
+    </div>
+    <div class="text d-flex flex-column  ps-2 fw-bold">Punjab Benevolent Funds</div>
+  </div>
+ 
   <ul class="nav navbar"  [ngClass]="{'collapsed': isCollapsed}">
     <li *ngFor="let item of navItems" [class.active]="item.active">
       <a *ngIf="!item.children" [routerLink]="item.link">

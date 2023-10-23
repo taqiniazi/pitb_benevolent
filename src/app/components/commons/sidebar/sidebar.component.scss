@@ -1,27 +1,16 @@
+
 aside {
     position: fixed;
     top:0;
     bottom: 0;
     background:url("../../../../assets/images/benvolent-login-img1.png") no-repeat;
     background-size: cover;
-    .toggleList{
-        position: absolute;
-        right: 0;
-        color: #fff;
-        background-color: #007c51;
-        font-size: 26px;
-        z-index: 1;
-        height: 40px;
-        width: 40px;
-        text-align: center;
-
-        border-radius: 5px    ;
-            -webkit-border-radius: 5px    ;
-            -moz-border-radius: 5px    ;
-            -ms-border-radius: 5px    ;
-            -o-border-radius: 5px    ;
+    .logo{
+        .text{
+            color: white;
+            justify-content: center
+        }
     }
-    
     ul{
         @extend ul;
         width: 275px;
@@ -31,19 +20,6 @@ aside {
         -ms-transition: width 0.3s;
         -o-transition: width 0.3s;
         
-        &.collapsed {
-            width: 90px;
-            li{
-                a{
-                    i{
-                        font-size: 28px;
-                    }
-                    span{
-                        display: none;
-                    }
-                }
-            }
-        }
         li{
             display: block;
             width: 100%;

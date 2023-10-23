@@ -8,6 +8,13 @@ import { NavigationEnd, Router } from '@angular/router';
 })
 export class LayoutComponent {
   showHeaderAndSidebar: boolean = true;
+  isMainWrapperVisible: boolean = false;
+  isSidebarCollapsed: boolean = false;
+
+  toggleMainWrapperAndSidebar() {
+    this.isMainWrapperVisible = !this.isMainWrapperVisible;
+    this.isSidebarCollapsed = !this.isSidebarCollapsed;
+  }
   constructor(private router: Router) {
     this.router.events.subscribe((event) => {
       if (event instanceof NavigationEnd) {
