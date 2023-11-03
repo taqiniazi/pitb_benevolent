@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './components/login/login.component';
@@ -13,6 +12,7 @@ import { ForgetpasswordComponent } from './components/forgetpassword/forgetpassw
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { LoginLeftSideComponent } from './components/commons/login-left-side/login-left-side.component';
 import { LayoutComponent } from './layout/layout.component';
+import { AgChartsAngularModule } from 'ag-charts-angular';
 
 @NgModule({
   declarations: [
@@ -30,7 +30,8 @@ import { LayoutComponent } from './layout/layout.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+    AgChartsAngularModule
   ],
   providers: [],
   bootstrap: [AppComponent]

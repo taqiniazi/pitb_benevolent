@@ -10,10 +10,12 @@ export class LayoutComponent {
   showHeaderAndSidebar: boolean = true;
   isMainWrapperVisible: boolean = false;
   isSidebarCollapsed: boolean = false;
+  isSidebarCollapsedActive: boolean = false;
 
   toggleMainWrapperAndSidebar() {
     this.isMainWrapperVisible = !this.isMainWrapperVisible;
     this.isSidebarCollapsed = !this.isSidebarCollapsed;
+    this.isSidebarCollapsedActive = !this.isSidebarCollapsedActive;
   }
   constructor(private router: Router) {
     this.router.events.subscribe((event) => {

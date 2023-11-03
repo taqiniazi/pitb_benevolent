@@ -1,0 +1,42 @@
+.card{
+    border:0px;
+    border-radius: 8px;
+    background-clip: padding-box;
+    box-shadow: 0 2px 6px 0 rgba(67, 89, 113, 0.12);
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    .card-body{
+        border:0px;
+        padding: 25px;
+        
+    }
+}
+.card_logo{
+        width: 50px;
+        height: 50px;
+        background-color: rgb(0, 159, 141, 0.05);
+        border-radius: 50%;
+        text-align: center;
+        padding: 8px;
+        margin-bottom:15px;
+        svg{
+            width: 100%;
+        }
+}
+.card_title {
+    color: #A9A9A9;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.count{
+    color: #1A1A1A;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.48px;
+}

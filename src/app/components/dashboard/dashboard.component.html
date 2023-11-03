@@ -1,1 +1,29 @@
-<p>dashboard works!</p>
+<div class="row">
+    <div class="col mb-4" *ngFor="let cardItem of mainCard">
+        <div class="card">
+            <div class="card-body">
+                <div class="card_logo">
+                    <img src={{cardItem.cardImage}} alt="" class="img-fluid w-100" />
+                </div>
+                <div class="card_title mb-2">{{cardItem.cardTitle}}</div>
+                <div class="count fw-bold d-flex align-items-center">
+                    {{cardItem.cardAmount}}
+
+                    <a href="javascript:;" class="fw-bold text-dark"><i style="font-size: larger;" class="bi bi-arrow-right-short"></i></a>
+                
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="clearfix"></div>
+    <div class="col-md-8">
+        <div class="card">
+            <div class="card-body">
+                <div class="card_title fw-bold text-dark">Total Revenue</div>
+                <ag-charts-angular [options]="options" hieght="450" width="100%"></ag-charts-angular>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4"></div>
+    
+</div>

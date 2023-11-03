@@ -25,7 +25,6 @@ export class SidebarComponent {
   }
   updateActiveItem() {
     const currentUrl = this.router.url;
-  
     for (const item of this.navItems) {
       if (item.link && currentUrl.startsWith(item.link)) {
         item.active = true;

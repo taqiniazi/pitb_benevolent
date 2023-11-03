@@ -1,0 +1,14 @@
+.page_title {
+    color: #1A1A1A;
+    font-size: 28px;
+    font-weight: 600;
+}
+ul{
+    &.dropdown-menu{
+        &.dropdownCollapsed {
+            display: block;
+            position: absolute;
+            right: 0;
+        }
+    }
+}

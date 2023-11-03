@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent {
+  isSubMenuCollapsed: boolean = false;
 
+  toggleSubMenu() {
+    this.isSubMenuCollapsed = !this.isSubMenuCollapsed;
+  }
 }

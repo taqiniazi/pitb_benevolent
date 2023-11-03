@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component } from "@angular/core";
 import { NavigationEnd, Router } from '@angular/router';
 
 @Component({
@@ -7,7 +7,7 @@ import { NavigationEnd, Router } from '@angular/router';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'pitb_benevolent';
+  title = 'Benovolent Fund';
   showHeaderAndSidebar: boolean = true;
 
   constructor(private router: Router) {

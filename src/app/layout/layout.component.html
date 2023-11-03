@@ -1,16 +1,18 @@
 <div class="d-flex flex-wrap"  [class.mini-content]="isMainWrapperVisible">
-    
     <div id="sidebar" class=" h-100" [class.sidebar-collapsed]="isSidebarCollapsed">
         <app-sidebar></app-sidebar>
     </div>
     
     <div id="content" class="w-100">
-        <div id="header">
-            <a href="javascript:;" class="toggleList" (click)="toggleMainWrapperAndSidebar()">
-                <i class="bi bi-box-arrow-in-left"></i>
+        <header id="header" class="position-relative">
+            <a href="javascript:;" class="toggleList" (click)="toggleMainWrapperAndSidebar()" >
+                <i class="bi bi-chevron-double-left" [class.bi-chevron-double-right]="isSidebarCollapsedActive"></i>
               </a>
             <app-header />
+        </header>
+        <div class="main_container p-4">
+            <router-outlet />
         </div>
-        <router-outlet />
+        
     </div>
 </div>
